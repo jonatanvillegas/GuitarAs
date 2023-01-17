@@ -1,0 +1,31 @@
+---
+import Layout from "../layouts/Layout.astro";
+import nosotros from '../img/nosotros.jpg'
+---
+<Layout title="Guitarla - Nosotros">
+    <main class="contenedor">
+        <h1 class="heading">nosotros</h1>
+        <div class="contenido">
+            <img src={nosotros} alt="imagen nosotros">
+
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque reiciendis reprehenderit optio! Mollitia perferendis veritatis unde nam numquam saepe, magni, nisi, nobis nihil autem hic distinctio! Dolor eaque maiores recusandae!
+               oloribus provident magnam praesentium accusantium labore illo quis autem quia voluptate. At odio esse, nulla eaque sequi quae dolorem nisi deserunt quam iusto? Fuga, accusamus distinctio dolorem nisi ratione eveniet.
+                Doloremque praesentium veniam adipisci quam possimus dolore minus aperiam, ducimus sint dolorum error quis corrupti pariatur commodi sit fuga, alias minima, dolores dignissimos. Ipsum deserunt repellendus voluptates, perspiciatis asperiores nesciunt!</p>
+            </div>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    .contenido {
+    display: grid;
+    gap: 4rem;
+}
+@media (min-width: 768px) {
+    .contenido {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+</style>
